@@ -53,68 +53,15 @@ Trong đó:
 - Python 3.8 trở lên
 - pip (Python package manager)
 
-### Cách 1: Cài đặt trực tiếp
+### Hướng dẫn cài đặt
 
 1. **Clone hoặc tải về repository**
    ```bash
-   git clone <repository-url>
-   cd CITD/TriTueNhanTao/Bai2A*
+   git clone https://github.com/nphuoctho/8-puzzle-astar
+   cd ./8-puzzle-astar
    ```
 
-2. **Cài đặt thư viện cần thiết**
-   ```bash
-   pip install streamlit
-   ```
-
-3. **Chạy ứng dụng**
-   ```bash
-   streamlit run app.py
-   ```
-
-4. Ứng dụng sẽ tự động mở tại `http://localhost:8501`
-
-### Cách 2: Sử dụng Virtual Environment (Khuyến nghị)
-
-1. **Tạo virtual environment**
-   ```bash
-   python -m venv venv
-   ```
-
-2. **Kích hoạt virtual environment**
-   
-   - Trên Linux/Mac:
-     ```bash
-     source venv/bin/activate
-     ```
-   
-   - Trên Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-
-3. **Cài đặt dependencies**
-   ```bash
-   pip install streamlit
-   ```
-
-4. **Chạy ứng dụng**
-   ```bash
-   streamlit run app.py
-   ```
-
-5. **Thoát virtual environment** (khi hoàn thành)
-   ```bash
-   deactivate
-   ```
-
-### Cách 3: Sử dụng requirements.txt
-
-1. **Tạo file requirements.txt** (nếu chưa có):
-   ```txt
-   streamlit>=1.28.0
-   ```
-
-2. **Cài đặt tất cả dependencies**
+2. **Cài đặt dependencies**
    ```bash
    pip install -r requirements.txt
    ```
@@ -124,11 +71,12 @@ Trong đó:
    streamlit run app.py
    ```
 
+4. Ứng dụng sẽ tự động mở tại `http://localhost:8501`
+
 ### Troubleshooting
 
-- **Lỗi "streamlit command not found"**: 
-  - Đảm bảo đã cài đặt streamlit: `pip install streamlit`
-  - Hoặc chạy: `python -m streamlit run app.py`
+- **Lỗi "streamlit command not found"**:
+  - Chạy: `python -m streamlit run app.py`
 
 - **Lỗi "Address already in use"**:
   - Thay đổi port: `streamlit run app.py --server.port 8502`
@@ -188,7 +136,7 @@ Kết quả: Lỗi - không cùng parity
 - **Độ phức tạp thời gian**: O(b^d) với b là branching factor (~2-4), d là độ sâu
 - **Manhattan heuristic** giảm đáng kể số node cần mở rộng so với Misplaced Tiles
 
-## Tác giả
+## Môn học
 
 Bài tập môn Trí Tuệ Nhân Tạo - CITD
 
